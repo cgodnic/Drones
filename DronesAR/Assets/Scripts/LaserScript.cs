@@ -42,7 +42,7 @@ public class LaserScript : MonoBehaviour
         // ARCamera Transform
         Transform cam = Camera.main.transform;
 
-        // Èas do naslednjega strela
+        // cas do naslednjega strela
         nextFire = Time.time + fireRate;
 
         // raycast
@@ -53,13 +53,22 @@ public class LaserScript : MonoBehaviour
        
         RaycastHit hit;
 
-        // Preverimo èe smo zadeli objekt
+        // Preverimo ï¿½e smo zadeli objekt
         if (Physics.Raycast(rayOrigin, cam.forward, out hit, fireRange))
         {
-            // Set the end of the Laser Line to the object hit
+            // konec laserja nastavi na zadet objekt
             laserLine.SetPosition(1, hit.point);
 
-           // to doooooooooooo
+            CubeBehaviourScript cubeCtr = hit.collider.GetComponent<CubeBehaviourScript>();
+            if ( cubeCtr != null ) {
+                if ( hit.rigidbody != null ) {
+                    // potrdi da si zadel
+                    hit.rigidbody.AddForce(-hit.normal*hitForce);
+                    // potrdi damage
+                    cubeCtr.Hit( laserDamage );
+                    hitCount--;
+                }
+            }
 
         }
         else
