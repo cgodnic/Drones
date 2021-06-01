@@ -96,14 +96,10 @@ public class CubeBehaviourScript : MonoBehaviour {
     // Uniči kocko
     private IEnumerator DestroyCube(){
         mIsAlive = false;
- 
         // KOcka izgine
         GetComponent<Renderer>().enabled = false;
 
         yield return new WaitForSeconds(0.5f);
         Destroy(gameObject);
     }
-
-    
-
 }
