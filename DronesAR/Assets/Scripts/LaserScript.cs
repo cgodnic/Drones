@@ -34,6 +34,7 @@ public class LaserScript : MonoBehaviour
         if (Input.GetButton("Fire1") && Time.time > nextFire)
         {
             Fire();
+            SFXmanager.sfxInstance.Audio.PlayOneShot(SFXmanager.sfxInstance.Click);
         }
     }
 
