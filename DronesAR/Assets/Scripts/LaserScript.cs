@@ -40,6 +40,7 @@ public class LaserScript : MonoBehaviour
 
     private void Fire()
     {
+
         // ARCamera Transform
         Transform cam = Camera.main.transform;
 
@@ -51,6 +52,7 @@ public class LaserScript : MonoBehaviour
 
         // originalna posicija laserja vedno 10 enot od AR kamere
         laserLine.SetPosition(0, transform.up * -10f);
+        
        
         RaycastHit hit;
 
@@ -83,6 +85,7 @@ public class LaserScript : MonoBehaviour
 
     private IEnumerator LaserFx()
     {
+        FindObjectOfType<AudioMan>().Play("Laser");
         laserLine.enabled = true;
         // Way for a specific time to remove the LineRenderer
         yield return laserDuration;

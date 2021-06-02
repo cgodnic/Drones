@@ -98,7 +98,7 @@ public class CubeBehaviourScript : MonoBehaviour {
         mIsAlive = false;
         // KOcka izgine
         GetComponent<Renderer>().enabled = false;
-
+        FindObjectOfType<AudioMan>().Play("Explosion");
         yield return new WaitForSeconds(0.5f);
         Destroy(gameObject);
     }
