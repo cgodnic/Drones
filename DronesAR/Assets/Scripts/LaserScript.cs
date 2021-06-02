@@ -31,7 +31,7 @@ public class LaserScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButton("Fire1") && Time.time > nextFire && (TimerScript.time > 0))
+        if (Input.GetButton("Fire1") && Time.time > nextFire && (TimerScript.time > 0) &&(hitCount >0))
         {
             Fire();
             SFXmanager.sfxInstance.Audio.PlayOneShot(SFXmanager.sfxInstance.Click);
