@@ -23,6 +23,9 @@ public class CanvasScript : MonoBehaviour
         if(RestartScript.pressed){
             restartButton.SetActive(false);
         }
+        if (LaserScript.hitCount == 0) {
+            restartButton.SetActive(true);
+        }
       
     }
 }
