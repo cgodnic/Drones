@@ -1,6 +1,10 @@
- file move on your android phone. Then click on the apk file on phone and install the aplication. 
-When is installed you have to click on icon and the game menu will open. 
-Click on play button to start game or you can check the instructions (questionmark) or close the aplication (house)
+//instalation-----------------------------------------------------------
+Move file(Drones.apk) on your android phone. Then click on the apk file on phone and install the aplication. 
+//Launch----------------------------------------------------------------
+find DronesAR app on your phone and launch the game.
+
+//In-Game---------------------------------------------------------------
+Click on play button to start game or you can check the instructions (questionmark) or close the aplication (house).
 When you start game you will see drones moving in the space around you. You need to destroy them by set the drone on 
 aim and click so the laser will destroy the object.
 
