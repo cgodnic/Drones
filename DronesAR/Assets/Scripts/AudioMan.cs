@@ -43,6 +43,7 @@ public class AudioMan : MonoBehaviour
         s.source.Play();
     }
 
+
     public void updateVolume(float volume){
          foreach (Sound s in sounds){
             s.source.volume = volume;

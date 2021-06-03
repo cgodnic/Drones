@@ -42,4 +42,9 @@ public class TimerScript : MonoBehaviour
             RestartScript.pressed = false;
         }
     }
+
+    public void setTime() {
+
+    }
+
 }

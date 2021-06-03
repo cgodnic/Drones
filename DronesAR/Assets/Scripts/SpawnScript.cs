@@ -9,7 +9,7 @@ public class SpawnScript : MonoBehaviour
     public GameObject mCubeObj;
 
     // stevilo vseh kock
-    public int mTotalCubes = 10;
+    public static int mTotalCubes = 10;
 
     // cas za spawnat kocke
     public float mTimeToSpawn = 1f;
@@ -86,8 +86,12 @@ public class SpawnScript : MonoBehaviour
         return true;
     }
 
+
+
     public void updateDrones(int drones){
         mTotalCubes = drones;
     }
+
+
 
 }
