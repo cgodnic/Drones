@@ -1,0 +1,9 @@
+ file move on your android phone. Then click on the apk file on phone and install the aplication. 
+When is installed you have to click on icon and the game menu will open. 
+Click on play button to start game or you can check the instructions (questionmark) or close the aplication (house)
+When you start game you will see drones moving in the space around you. You need to destroy them by set the drone on 
+aim and click so the laser will destroy the object.
+
+If you destroy all 10 ememies in 60 seconds you win else you lose.
+
+//the game is prototype and is not the final product 
