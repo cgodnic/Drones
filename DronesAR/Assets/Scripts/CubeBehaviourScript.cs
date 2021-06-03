@@ -25,7 +25,8 @@ public class CubeBehaviourScript : MonoBehaviour {
     // Spreminjanje hitrosti
     public float mGrowingSpeed  = 10f;
     private bool mIsCubeScaled  = false;
- 
+
+     
     void Start () {
         CubeSettings();
     }
@@ -98,6 +99,7 @@ public class CubeBehaviourScript : MonoBehaviour {
         mIsAlive = false;
         // KOcka izgine
         GetComponent<Renderer>().enabled = false;
+        //explosion.Play();
         FindObjectOfType<AudioMan>().Play("Explosion");
         yield return new WaitForSeconds(0.5f);
         Destroy(gameObject);
