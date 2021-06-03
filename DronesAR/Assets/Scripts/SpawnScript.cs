@@ -86,4 +86,8 @@ public class SpawnScript : MonoBehaviour
         return true;
     }
 
+    public void updateDrones(int drones){
+        mTotalCubes = drones;
+    }
+
 }

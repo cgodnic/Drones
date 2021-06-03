@@ -9,6 +9,8 @@ public class AudioMan : MonoBehaviour
 
     public static AudioMan instance;
 
+    private float musicVolume = 1f;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -39,5 +41,11 @@ public class AudioMan : MonoBehaviour
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
         s.source.Play();
+    }
+
+    public void updateVolume(float volume){
+         foreach (Sound s in sounds){
+            s.source.volume = volume;
+        }
     }
 }
